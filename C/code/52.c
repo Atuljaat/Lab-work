@@ -1,9 +1,11 @@
 // to show the use of string function: strcpy(), strcat(), strcmp(), strlen().
 #include <stdio.h>
-int main()
-{
-    printf("Name : Atul kumar \t Class : BCA 1A\n");
+#include <string.h>
+
+int main() {
+    printf("Name : Atul Kumar \t Class : BCA 1A\n");
     printf("**************************************\n");
+    
     char str1[100], str2[100], combined[200];
 
     printf("Enter the first string: ");
@@ -22,16 +24,11 @@ int main()
     printf("Combined string: %s\n", combined);
 
     int cmpResult = strcmp(str1, str2);
-    if (cmpResult == 0)
-    {
+    if (cmpResult == 0) {
         printf("The strings are equal.\n");
-    }
-    else if (cmpResult < 0)
-    {
+    } else if (cmpResult < 0) {
         printf("The first string is less than the second string.\n");
-    }
-    else
-    {
+    } else {
         printf("The first string is greater than the second string.\n");
     }
 
