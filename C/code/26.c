@@ -4,20 +4,16 @@ int main(){
     printf("Name : Atul kumar \t Class : BCA 1A\n");
     printf("**************************************\n");
 
-    int x , n , i = 2 , a;
-    printf("Enter the base(x) : ");
-    scanf("%d" , &x);
-    printf("Enter the exponent : ");
-    scanf("%d" , &n);
-    a = x ;
-    while (  i <= n)
-    {
-        x = x * x ;
-    printf("%d ^ %d = %d\n" , a , i , x);
-        i++ ;
-    }
-
-    // Not working 
-    
-    return 0;
+    int x, p,n=1;
+ printf("Enter the base (X): ");
+ scanf("%d", &x);
+ printf("Enter the exponent (p): ");
+ scanf("%d", &p);
+ int i = 1;
+ while(i<=p){
+ n *= x;
+ printf("%d^%d = %d\n", x, i, n);
+ i++;
 }
+ return 0;
+};
