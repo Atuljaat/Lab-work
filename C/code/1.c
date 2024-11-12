@@ -9,7 +9,4 @@ int main(){
     printf("Removing last letter from CAT\b \n");
     printf("Adding blackslash \\ \n");
     printf("Adding  double quote \" Hello \" \n");
-    printf("Adding  single quote \' Hello \' ");
-
-    return 0;
 }
